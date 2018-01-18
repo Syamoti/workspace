@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="chat.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCeJ_ig_RA5LLMCnxxBAacUGfTf2sTnMas",
+        authDomain: "chat-1d9c5.firebaseapp.com",
+        databaseURL: "https://chat-1d9c5.firebaseio.com",
+        projectId: "chat-1d9c5",
+        storageBucket: "chat-1d9c5.appspot.com",
+        messagingSenderId: "480574203380"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="panel-default">
+        <div class="panel-heading">
+            <p>チャット</p>
+        </div>
+        <div id="scroller" class="panel-body">
+            <ul id='messages'>
+            </ul>
+        </div>
+        <div class="panel-footer">
+            <input type='text' class="form-control" id="nameInput" placeholder="ユーザー名">
+        </div>
+        <div class="panel-footer">
+            <input type='text' class="form-control" id="messageInput" placeholder="メッセージ内容">
+        </div>
+    </div>
+  </body>
+</html>
