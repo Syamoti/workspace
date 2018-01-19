@@ -12,7 +12,7 @@ CHAT.fire = {
     this.$board = $('#jsi-board');
     this.$button = $('#jsi-button');
 
-    //データベースと接続する。各自登録時に出たコードに書き換え。
+    //データベースと接続する。。
     this.chatDataStore = new Firebase('https://chat-1d9c5.firebaseio.com/');
   },
 
