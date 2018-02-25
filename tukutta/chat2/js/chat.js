@@ -1,3 +1,4 @@
+
 var CHAT = CHAT || {};
 
 CHAT.fire = {
@@ -13,7 +14,7 @@ CHAT.fire = {
     this.$button = $('#jsi-button');
 
     //データベースと接続する。。
-    this.chatDataStore = new Firebase('https://chat-1d9c5.firebaseio.com/');
+    this.chatDataStore = new Firebase('https://chat2-4013c.firebaseio.com/');
   },
 
   bindEvent:function(){
@@ -38,7 +39,7 @@ CHAT.fire = {
     var name = this.$name.val();
     var text = this.$textArea.val();
 
-    //データベースの中の「talks」に値を送り格納（'talks'は各自任意に設定可能）
+    //データベースの中の「talks」に値を送り格納
     self.chatDataStore.child('talks').push({user:name, message:text});
     self.$textArea.val('');
   },
@@ -48,6 +49,8 @@ CHAT.fire = {
    var msgDom = $('<li>');
    msgDom.html(json);
    this.$board.append(msgDom[0]);
+   var btn = document.createElement('button');
+   btn.type = 'button';
   }
 }
 
