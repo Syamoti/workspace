@@ -3,18 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="js/login.js"></script>
+    <script src="js/loginUI.js"></script>
+    <script src="js/loginCheck.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCinANYPGA2XGp7U-l1hWs4TcBFB5F2OGk",
+        authDomain: "chat2-4013c.firebaseapp.com",
+        databaseURL: "https://chat2-4013c.firebaseio.com",
+        projectId: "chat2-4013c",
+        storageBucket: "chat2-4013c.appspot.com",
+        messagingSenderId: "979600709226"
+      };
+      firebase.initializeApp(config);
+    </script>
     <link rel="stylesheet" type="text/css" href="css/login.css">
   </head>
   <body>
     <div class="wrapper">
     <div class="container">
-        <h1>Welcome</h1>
+        <h1>chat</h1>
 
         <form class="form">
             <input type="text" placeholder="Username">
             <input type="password" placeholder="Password">
-            <button type="submit" id="login-button">Login</button>
+            <button type="submit" id="login-button" onclick="passWordCheck();">Login</button>
+            <button type="create" id="createAcount" onclick="acountCreate();">+</button>
         </form>
     </div>
 
