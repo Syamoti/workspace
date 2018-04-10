@@ -2,21 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ログイン</title>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
     <script src="js/loginUI.js"></script>
     <script src="js/loginCheck.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCinANYPGA2XGp7U-l1hWs4TcBFB5F2OGk",
-        authDomain: "chat2-4013c.firebaseapp.com",
-        databaseURL: "https://chat2-4013c.firebaseio.com",
-        projectId: "chat2-4013c",
-        storageBucket: "chat2-4013c.appspot.com",
-        messagingSenderId: "979600709226"
-      };
-      firebase.initializeApp(config);
-    </script>
     <link rel="stylesheet" type="text/css" href="css/login.css">
   </head>
   <body>
@@ -25,10 +14,10 @@
         <h1>chat</h1>
 
         <form class="form">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button type="submit" id="login-button" onclick="passWordCheck();">Login</button>
-            <button type="create" id="createAcount" onclick="acountCreate();">+</button>
+            <input type="email" id="email-login" placeholder="EMailAdress">
+            <input type="password" id="password-login" placeholder="Password">
+            <input type="button" value="Login" id="login-button" onClick="location.href = 'index.html'">
+            <!--button type="create" id="createAcount">+</button-->
         </form>
     </div>
 

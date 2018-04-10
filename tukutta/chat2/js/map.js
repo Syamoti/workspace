@@ -16,7 +16,7 @@ function mapInit() {
         //情報ウインドウオプションの指定
         var infoWindowOption = {
           position : centerPosition,  //中心座標
-          content : "現在地"  //ウインドウ内に表示する文字列
+          content : "あなた"  //ウインドウ内に表示する文字列
         };
 
         //情報ウインドウ追加

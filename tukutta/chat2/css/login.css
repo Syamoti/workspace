@@ -100,7 +100,7 @@ form input:focus {
   width: 300px;
   color: #53e3a6;
 }
-form button {
+form input#login-button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -116,7 +116,7 @@ form button {
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
 }
-form button:hover {
+form input#login-button:hover {
   background-color: #f5f7f9;
 }
 .bg-bubbles {
